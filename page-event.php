@@ -66,7 +66,10 @@
         -->
         <section id="video">
             <div class="video-holder">
-                <iframe src="https://www.youtube.com/embed/RAyYtjjmpag?si=WIJUD7Y5GkLvsWua" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe id="video-item" src="https://www.youtube.com/embed/RAyYtjjmpag?si=WIJUD7Y5GkLvsWua" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="screenshot">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/video-cover.PNG" alt="" />
+                </div>
             </div>
         </section>
 

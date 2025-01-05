@@ -12,6 +12,7 @@ function throne_theme_setup() {
 	wp_enqueue_script("jquery");
 	
     add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'jquery' );
 	
     register_nav_menus(
         array(

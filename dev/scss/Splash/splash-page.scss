@@ -28,14 +28,39 @@
         }
     }
 
+    /* VIDEO */
     #video {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0 0 80px 0;
 
         .video-holder {
             width: 100%;
             max-width: 1080px;
+            position: relative;
+        }
+
+        .screenshot {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            cursor: pointer;
+
+            img {
+                object-fit: cover;
+                object-position: center center;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        .screenshot:hover {
+            img {
+                transform: scale(1.1);
+            }
         }
 
         iframe {
@@ -109,6 +134,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0 0 40px 0;
 
         .logo-image {
             max-width: 1080px;
