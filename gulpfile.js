@@ -40,8 +40,8 @@ exports.buildStyles = buildStyles;
 exports.buildScripts = buildScripts;
 
 function watch() {
-    gulp.watch('./scss/**/*.scss', buildStyles);
-    gulp.watch('./js/**/*.js', buildScripts);
+    gulp.watch('./dev/scss/**/*.scss', buildStyles);
+    gulp.watch('./dev/js/**/*.js', buildScripts);
 }
 
 exports.watch = watch;

@@ -1,0 +1,47 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+
+    --side-padding: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    :root {
+        --side-padding: 20px;
+    }
+}
+
+*, *:before, *:adter {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+    margin: 0;
+    padding: 0 var(--side-padding);
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+summary  {
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+@import './Splash/splash-page.scss';

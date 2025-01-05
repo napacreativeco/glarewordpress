@@ -1,0 +1,129 @@
+#event-page {
+    padding: 40px 0 0 0;
+
+    #ticket {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .ticket-image {
+            max-width: 1080px;
+        }
+    }
+
+    /* Ticket */
+    #ticket-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 0 40px 0;
+
+        a {
+            display: block;
+        }
+
+        img {
+            max-width: 150px;
+        }
+    }
+
+    #video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .video-holder {
+            width: 100%;
+            max-width: 1080px;
+        }
+
+        iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+        }
+    }
+
+    /* FAQ */
+    #faq {
+        margin: 0 0 100px 0;
+        
+        .ticket-holder {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0 40px 0;
+
+            a {
+                display: block;
+            }
+
+            img {
+                max-width: 150px;
+            }
+        }
+
+        details {
+            display: block;
+            text-align: center;
+            width: 60%;
+            margin: 0 auto 30px auto;
+
+            summary {
+                position: relative;
+                padding: 0 0 8px 0;
+                cursor: pointer;
+
+                h3 {
+                    margin: 0;
+                }
+            }
+
+            summary:before {
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: var(--white);
+                position: absolute;
+                bottom: 0px;
+                left: 0%;
+                right: 0%;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        details:hover {
+            summary:before {
+                width: 50%;
+                left: 25%;
+                right: 25%;
+                opacity: 0.5;
+            }
+        }
+
+    }
+
+
+    #logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo-image {
+            max-width: 1080px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    #event-page {
+
+        #faq {
+            details {
+                width: 80%;
+            }
+        }
+    }
+}
