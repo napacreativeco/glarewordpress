@@ -7,7 +7,9 @@
         var video = jQuery(this).siblings('iframe');
         var videoSrc = video.attr('src');
         video.attr('src', videoSrc + '&autoplay=1');
+        jQuery(video).css('opacity', 1);
         jQuery(this).hide();
+        jQuery('.play-icon').hide();
     });
 </script>
 

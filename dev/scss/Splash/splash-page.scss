@@ -41,6 +41,10 @@
             position: relative;
         }
 
+        iframe {
+            opacity: 0;
+        }
+        
         .screenshot {
             position: absolute;
             top: 0;
@@ -57,16 +61,34 @@
             }
         }
 
-        .screenshot:hover {
-            img {
-                transform: scale(1.1);
-            }
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            fill: var(--white);
+            transition: all 0.3s ease-in-out;
+            width: 100px;
+            height: 100px;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            pointer-events: none;
         }
 
         iframe {
             width: 100%;
             aspect-ratio: 16 / 9;
         }
+
+        .screenshot:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    #video:hover svg {
+        opacity: 1;
     }
 
     /* FAQ */
