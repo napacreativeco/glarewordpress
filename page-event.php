@@ -66,7 +66,7 @@
         -->
         <section id="video">
             <div class="video-holder">
-                <iframe id="video-item" src="https://www.youtube.com/embed/RAyYtjjmpag?si=WIJUD7Y5GkLvsWua" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe id="video-item" src="https://www.youtube.com/embed/ocwKD3snD3s?si=enzTT867v9MYBv7i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <div class="screenshot">
                     <img src="https://sunset-funeral.com/wp-content/uploads/2025/01/video-thumbnail.png" alt="" />
                 </div>
