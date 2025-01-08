@@ -46,7 +46,9 @@
         -->
         <section id="ticket">
             <div class="ticket-image">
-                <img src="https://sunset-funeral.com/wp-content/uploads/2025/01/Glare-SunsetF-Guts-Ticket.png" alt="" />
+                <a href="https://link.dice.fm/u4bbae8379e0" title="Glare - Sunset Funeral Event">
+                    <img src="https://sunset-funeral.com/wp-content/uploads/2025/01/Glare-SunsetF-Guts-Ticket.png" alt="" />
+                </a>
             </div>
         </section>
 
@@ -55,7 +57,7 @@
         -->
         <section id="ticket-link">
             <div class="ticket-holder">
-                <a href="" title="">
+                <a href="https://link.dice.fm/u4bbae8379e0" title="Glare - Sunset Funeral Event">
                     <img src="https://sunset-funeral.com/wp-content/uploads/2025/01/Glare-SunsetF-Guts-Ticket-RSVP.jpg" alt="" />
                 </a>
             </div>
