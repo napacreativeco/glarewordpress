@@ -16,12 +16,16 @@
     svg {
         width: 40px;
     }
+
+    img {
+        max-width: 140px;
+    }
 </style>
 
 <?php get_header(); ?>
 
 <div class="temp-container">
-    <?php get_template_part('/template-parts/icon--throne'); ?>
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/glare-sunburst.png" alt="Glare" />
 </div>
 
 <?php get_footer(); ?>
