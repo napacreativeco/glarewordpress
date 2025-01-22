@@ -20,7 +20,7 @@
         </div>
 
         <div class="center">
-            <img src="/wp-content/uploads/2025/01/blue-apple.png" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/blue-apple.png" />
         </div>
 
         <div class="right">
