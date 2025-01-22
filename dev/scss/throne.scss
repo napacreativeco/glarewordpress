@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Sysfont';
+    src: url('../assets/ChicagoFLF.woff2') format('woff2'),
+        url('../assets/ChicagoFLF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lucida';
+    src: url('../assets/LucidaGrande.woff2') format('woff2'),
+        url('../assets/LucidaGrande.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --black: #000000;
     --white: #ffffff;
@@ -19,12 +37,13 @@ body {
     background: var(--black);
     color: var(--white);
     margin: 0;
-    padding: 0 var(--side-padding);
+    padding: 0;
     font-family: monospace;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     line-height: 1.6;
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,3 +72,6 @@ summary::-webkit-details-marker {
 }
 
 @import './Splash/splash-page.scss';
+@import './MacOS/mac-container.scss';
+@import './MacOS/browser.scss';
+@import './MacOS/myspace-ui.scss';

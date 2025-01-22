@@ -1,0 +1,347 @@
+/* width */
+::-webkit-scrollbar {
+    width: 14px;
+    background: #dddddd;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    max-height: 10px;
+    box-shadow: inset 0 0 10px #0B2F7B; 
+    background: linear-gradient(0.75turn,  #122E5E, #87B1EF, #80B7F6, #4182C7, #78C2FF, #AAE5FF);
+    background-color: #003385; /* will leave after image loads */
+    background-size: cover;
+    position: relative;
+}
+
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #555555 transparent;
+}
+
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-width: 8px 8px 0 8px;
+    border-color: #555555 transparent transparent transparent;
+}
+
+/*
+-----------------------
+BROWSER
+-----------------------
+*/
+.browser {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    right: 150px;
+    width: 65%;
+    // height: 70vh;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+    background: url('/wp-content/uploads/2025/01/glare-live.png');
+    background-size: contain;
+    overflow: hidden;
+    pointer-events: none;
+
+    .browser-wrap {
+        position: relative;
+        overflow: hidden;
+    
+        .browser-ui {
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .horizontal-scrollbar {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            margin: 0;
+            background: #dddddd;
+            border-top: 1px solid #666666;
+            border-bottom: 1px solid #666666;
+            
+            .inner {
+                box-shadow: inset 0 0 5px grey; 
+                border-radius: 10px;
+                width: 100%;
+                height: 14px;
+            }
+
+            img {
+                width: 14px;
+                border-left: 1px solid #666666;
+                margin: 0;
+            }
+        }
+
+
+        .webpage {
+            padding: 0 60px;
+            overflow-y: scroll;
+            pointer-events: all;
+            height: 100%;
+
+            .myspace-page {
+                padding: 0px 14px 90px 14px;
+            }
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: minmax(0,2fr) minmax(0, 3fr);
+            grid-gap: 14px;
+            margin: 40px 0 0 0;
+
+            /* Left */
+            .col-1 {
+                .contact {
+                    li {
+                        background: url('/wp-content/uploads/2025/01/link-background.png');
+                        background-size: cover;
+                        background-position: center center;
+                    }
+                }
+    
+                .items {
+                    width: 110%;
+                    margin: 0 -5%;
+                }
+
+                .sdr-logo {
+                    width: 80%;
+                    margin: 20px auto 0 auto;
+                }
+            }
+
+            /* Right */
+            .col-2 {
+
+                .buy-merch {
+                    margin: 0 0 20px 0;
+
+                    .items {
+                        width: calc(100% + 28px);
+                        margin: 14px -14px 0 -14px;
+                    }
+
+                }
+            }
+
+
+        }
+        
+    }
+
+}
+
+// .browser-menu {
+//     background-image: url('/wp-content/uploads/2025/01/brushed-metal.png');
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     width: 100%;
+//     color: #000000;
+//     font-family: 'Lucida';
+//     // position: fixed;
+//     // top: 0;
+//     // right: 0;
+//     // left: 0;
+
+//     .top-bar {
+//         display: grid;
+//         grid-template-columns: 1fr 8fr 1fr;
+
+//         .actions-buttons {
+//             display: flex;
+//             flex-direction: row;
+//             align-items: center;
+//             gap: 6px;
+//             padding: 10px;
+    
+//             .action {
+//                 width: 12px;
+//                 height: 12px;
+//                 border-radius: 50%;
+//             }
+    
+//             .close {
+//                 background: red;
+//             }
+        
+//             .minimize {
+//                 background: yellow;
+//             }
+        
+//             .maximize {
+//                 background: green;
+//             }
+    
+//         }
+
+//         .site-name {
+//             text-align: center;
+//             font-size: 12px;
+//         }
+//     }
+
+
+//     .address-bar-holder {
+//         display: grid;
+//         grid-template-columns: auto auto auto 9fr 3fr;
+//         align-items: center;
+//         padding: 0 10px;
+//         gap: 10px;
+//         margin: 0 0 8px 0;
+
+//         img {
+//             margin: 0;
+//         }
+
+//         .buttons {
+//             display: flex;
+//             flex-direction: row;
+//             align-items: center;
+
+//             img {
+//                 width: 50px;
+//             }
+//         }
+
+//         .refresh {
+//             img {
+//                 width: 25px;
+//             }
+//         }
+
+//         .add {
+//             img {
+//                 width: 25px;
+//             }
+//         }
+
+//         .address-bar {
+//             background: #ffffff;
+//             color: #000000;
+//             border-radius: 2px;
+//             box-shadow:inset 0 2px 2px 1px #888;
+//             display: flex;
+//             flex-direction: row;
+//             align-items: center;
+//             gap: 2px;
+//             padding: 3px;
+
+//             img {
+//                 width: 12px;
+//             }
+
+//             p {
+//                 margin: 0;
+//                 font-size: 10px;
+//             }
+//         }
+
+//         .search-bar-holder {
+//             .search-bar {
+//                 background: #ffffff;
+//                 color: #000000;
+//                 border-radius: 50px;
+//                 display: flex;
+//                 flex-direction: row;
+//                 align-items: center;
+//                 justify-content: flex-start;
+//                 gap: 4px;
+//                 padding: 3px 6px;
+//                 box-shadow:inset 0 2px 2px 1px #888;
+
+//                 p {
+//                     margin: 0;
+//                     font-size: 10px;
+//                 }
+
+//                 img {
+//                     width: 12px;
+//                 }
+//             }
+//         }
+
+//     }
+
+//     .favorites-holder {
+//         border-top: 1px solid #666666;
+//         padding: 5px 10px;
+//         font-size: 12px;
+
+//         ul {
+//             list-style: none;
+//             margin: 0;
+//             padding: 0;
+//             display: flex;
+//             flex-direction: row;
+//             align-items: center;
+//             gap: 10px;
+//         }
+//     }
+
+
+
+// }
+
+@media screen and (max-width: 767px) {
+
+    #system-menu {
+
+        .wrap {
+            padding: 0;
+            grid-template-columns: 1fr auto;
+            width: 100%;
+        }
+
+        .left {
+            padding: 0 0 0 10px;
+        }
+        .center {
+            padding: 0 10px 0 0;
+        }
+        .right {
+            display: none;
+        }
+    }
+
+    .browser {
+        top: 40px;
+        left: 10px;
+        right: 10px;
+        width: calc(100% - 20px);
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+
+        .browser-wrap {
+
+            .webpage {
+                padding: 0;
+                overflow-x: hidden;
+
+                .myspace-page {
+                    padding: 0 5px 90px 5px;
+                }
+            }
+
+            .two-column {
+                margin: 20px 0 0 0;
+            }
+
+        }
+        
+    }
+
+}
