@@ -33,6 +33,14 @@
     border-color: #555555 transparent transparent transparent;
 }
 
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
 /*
 -----------------------
 BROWSER
@@ -101,6 +109,7 @@ BROWSER
             display: grid;
             grid-template-columns: minmax(0,2fr) minmax(0, 3fr);
             grid-gap: 14px;
+            align-items: flex-start;
             margin: 40px 0 0 0;
 
             /* Left */
@@ -119,8 +128,9 @@ BROWSER
                 }
 
                 .sdr-logo {
-                    width: 80%;
-                    margin: 20px auto 0 auto;
+                    width: 60%;
+                    max-width: 200px;
+                    margin: 20px auto 20px auto;
                 }
             }
 
@@ -130,12 +140,17 @@ BROWSER
                 .buy-merch {
                     margin: 0 0 20px 0;
 
-                    .items {
-                        width: calc(100% + 28px);
-                        margin: 14px -14px 0 -14px;
+                    img {
+                        width: calc(100% + 10px);
+                        margin: 0px -10px 0 0px;
                     }
 
                 }
+
+                .shows-container {
+                    padding: 20px 0 0 0;
+                }
+
             }
 
 
@@ -296,7 +311,15 @@ BROWSER
 
 // }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
+
+    .desktop {
+        display: none !important;
+    }
+    
+    .mobile {
+        display: block !important;
+    }
 
     #system-menu {
 
@@ -304,17 +327,25 @@ BROWSER
             padding: 0;
             grid-template-columns: 1fr auto;
             width: 100%;
+            font-size: 12px;
         }
 
         .left {
             padding: 0 0 0 10px;
         }
+
         .center {
             padding: 0 10px 0 0;
+
+            img {
+                width: 14px;
+            }
         }
+
         .right {
             display: none;
         }
+
     }
 
     .browser {
@@ -337,8 +368,28 @@ BROWSER
             }
 
             .two-column {
-                margin: 20px 0 0 0;
+                margin: 20px 0 20px 0;
+
+                .col-2 {
+                    .buy-merch {
+                        margin: 0;
+                        height: calc(100% - 3px);
+                        display: flex;
+                        align-items: center;
+                    }
+                }
             }
+
+            .upcoming-shows {
+                margin: 0 0 20px 0;
+            }
+
+
+            .sdr-logo {
+                max-width: 200px !important;
+                padding-bottom: 20px;
+            }
+
 
         }
         

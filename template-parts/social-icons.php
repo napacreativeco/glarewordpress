@@ -3,6 +3,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
         list-style: none;
         padding: 0;
     }
@@ -37,6 +39,18 @@
 </style>
 
 <ul class="social-icons">
+
+    <li class="social-item down-right-merch">
+        <a href="https://glare.downrightmerch.com" title="Down Right Merch">
+            <?php get_template_part('/template-parts/icon--shirt'); ?>
+        </a>
+    </li>
+
+    <li class="social-item bandsintown">
+        <a href="https://www.bandsintown.com/a/732467-glare" title="Bandsintown">
+            <?php get_template_part('/template-parts/icon--bandsintown'); ?>
+        </a>
+    </li>
 
     <li class="social-item spotify">
         <a href="https://open.spotify.com/artist/2dXj6aC3DsxoTDyhk3u4gl?autoplay=true">
