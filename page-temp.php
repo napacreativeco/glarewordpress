@@ -26,6 +26,7 @@
 
 <div class="temp-container">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/glare-sunburst.png" alt="Glare" />
+    <h1>01/28/2025</h1>
 </div>
 
 <?php get_footer(); ?>
