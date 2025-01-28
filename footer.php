@@ -1,4 +1,4 @@
-<?php get_template_part('/template-parts/social-icons'); ?>
+<?php /* get_template_part('/template-parts/social-icons'); */ ?>
 
 <?php wp_footer(); ?>
 
