@@ -105,6 +105,11 @@ BROWSER
             }
         }
 
+        .actions-bar {
+            display: flex;
+            flex-direction: row;
+        }
+
         .two-column {
             display: grid;
             grid-template-columns: minmax(0,2fr) minmax(0, 3fr);

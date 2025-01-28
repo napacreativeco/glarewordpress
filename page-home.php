@@ -63,8 +63,19 @@
                     </div>
 
                     <!-- ACTIONS -->
-                     <div class="actions-bar" style="cursor: pointer;" onclick="window.location.href = 'https://www.youtube.com/watch?v=KN4vC-CJ1A8';">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/listen-thumbnail--update.png" alt="" />
+                     <div class="actions-bar">
+                        <a href="https://www.youtube.com/watch?v=KN4vC-CJ1A8" title="Watch 'Guts' on YouTube by Glare" target="_blank" style="cursor: pointer;">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/link--watch-guts.png" alt="Watch 'Guts' on YouTube by Glare" />
+                        </a>
+                        <a href="mailto:glaretx@gmail.com" title="Send Glare a Message" target="_blank" style="cursor: pointer;">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/link--send-message.png" alt="Send Glare a Message" />
+                        </a>
+                        <a href="https://www.instagram.com/glare.tx" title="Add Glare on Instagram" target="_blank" style="cursor: pointer;">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/link--add-friends.png" alt="Add Glare on Instagram" />
+                        </a>
+                        <a href="https://glare.downrightmerch.com" title="Glare merchandise from Down Right Merch" target="_blank" style="cursor: pointer;">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/link--buy-merch.png" alt="Glare merchandise from Down Right Merch" />
+                        </a>
                      </div>
 
                      <!-- TWO COLUMN -->
