@@ -63,7 +63,7 @@
                     </div>
 
                     <!-- ACTIONS -->
-                     <div class="actions-bar">
+                     <div class="actions-bar" onclick="window.location.href = 'https://www.youtube.com/watch?v=KN4vC-CJ1A8';">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/listen-thumbnail--update.png" alt="" />
                      </div>
 
