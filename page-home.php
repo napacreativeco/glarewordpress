@@ -57,14 +57,14 @@
 
                     <!-- Hero -->
                     <div class="myspace-hero">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/updated-hero.png" alt="" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/updated-hero--two.png" alt="" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/updated-hero--three.png" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/hero-slide.png" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/hero-slide--two.png" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/hero-slide--three.png" alt="" />
                     </div>
 
                     <!-- ACTIONS -->
                      <div class="actions-bar">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/myspace-link-bar.png" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/listen-thumbnail--update.png" alt="" />
                      </div>
 
                      <!-- TWO COLUMN -->
@@ -72,12 +72,12 @@
 
                         <!-- COL 1 -->
                         <div class="contact col-1">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/more-photos.png" alt="" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/glare--updated-promo.png" alt="" />
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/contact-image.png" alt="" />
                             <a href="https://sundaydrive-records.com" title="Sunday Drive Records" target="_blank" style="cursor: pointer;">
                                 <img class="sdr-logo desktop" src="<?php echo get_template_directory_uri(); ?>/assets/sunday-drive-pink.png" alt="" />
-                            <a href="https://deathwishinc.com" title="Deathwish Inc." target="_blank" style="cursor: pointer;">
-                                <img class="deathwish-logo desktop" src="<?php echo get_template_directory_uri(); ?>/assets/deathwish-logo.png" alt="" />
+                            <a href="https://deathwishinc.com/collections/glare" title="Glare merchandise from Deathwish Inc." target="_blank" style="cursor: pointer;">
+                                <img class="deathwish-logo desktop" src="<?php echo get_template_directory_uri(); ?>/assets/deathwish-logo.png" alt="Glare merchandise from Deathwish Inc." />
                             </a>
 
                             <div class="desktop">
@@ -92,6 +92,7 @@
                             <div class="buy-merch" 
                                  style="background: url('<?php echo get_template_directory_uri(); ?>/assets/merch-background.png'); background-size: cover; background-position: center center; cursor: pointer;"
                                  onclick="window.location.href = 'https://glare.downrightmerch.com';">
+                                <img class="title" src="<?php echo get_template_directory_uri(); ?>/assets/preorder-merch.png" alt="" />
                                 <img class="title" src="<?php echo get_template_directory_uri(); ?>/assets/buy-merch--shirt.png" alt="" />
                                 <img class="title" src="<?php echo get_template_directory_uri(); ?>/assets/buy-merch--shirt-vinyl.png" alt="" />
                                 <img class="title" src="<?php echo get_template_directory_uri(); ?>/assets/buy-merch--hoodie.png" alt="" />
@@ -114,10 +115,12 @@
 
                       <!-- MOBILE -->
                       <div class="mobile">
-                        <img class="mobile upcoming-shows" src="<?php echo get_template_directory_uri(); ?>/assets/upcoming-shows.png" alt="" />
+                        <img class="mobile upcoming-shows" src="<?php echo get_template_directory_uri(); ?>/assets/upcoming-shows.png" alt="Upcoming Shows" />
                         <?php get_template_part('/template-parts/bandsintown'); ?>
-                        <img class="sdr-logo mobile" src="<?php echo get_template_directory_uri(); ?>/assets/sunday-drive-pink.png" alt="" />
-                        <img class="deathwish-logo mobile" src="<?php echo get_template_directory_uri(); ?>/assets/deathwish-logo.png" alt="" />
+                        <img class="sdr-logo mobile" src="<?php echo get_template_directory_uri(); ?>/assets/sunday-drive-pink.png" alt="Sunday Drive Records" />
+                        <a href="https://deathwishinc.com/collections/glare" title="Glare merchandise from Deathwish Inc." target="_blank">
+                            <img class="deathwish-logo mobile" src="<?php echo get_template_directory_uri(); ?>/assets/deathwish-logo.png" alt="Glare merchandise from Deathwish Inc." />
+                        </a>
                       </div>
 
                 </div>
@@ -198,7 +201,7 @@
 
             // Show the next image
             jQuery(images).eq(currentImage).fadeIn(500); // Fade in over 0.5 seconds (optional)
-        }, 1000); // Cycle every 1 second
+        }, 2500); // Cycle every 1 second
     });
 </script>
 
