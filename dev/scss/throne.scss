@@ -19,6 +19,8 @@
 :root {
     --black: #000000;
     --white: #ffffff;
+    --pink: #B587C0;
+    --pink-dark: #AC79B9;
 
     --side-padding: 40px;
 }
@@ -74,7 +76,24 @@ summary::-webkit-details-marker {
     display: none;
 }
 
+.section-header {
+    background: var(--pink);
+    border-bottom: 2px solid var(--pink-dark);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+    h2 {
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+}
+
 @import './Splash/splash-page.scss';
 @import './MacOS/mac-container.scss';
 @import './MacOS/browser.scss';
 @import './MacOS/myspace-ui.scss';
+@import './MacOS/products.scss';

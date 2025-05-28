@@ -110,15 +110,25 @@
                             </div>
 
                             <div class="desktop">
-                                <img class="upcoming-shows" src="<?php echo get_template_directory_uri(); ?>/assets/upcoming-shows.png" alt="" />
+                                <div class="section-header">
+                                    <h2>UPCOMING SHOWS</h2>
+                                </div>
+
                                 <div class="shows-container">
-                                    <?php get_template_part('/template-parts/bandsintown'); ?>
+                                    <?php /* get_template_part('/template-parts/bandsintown'); */ get_template_part('/template-parts/seated'); ?>
                                 </div>
                             </div>
 
                         </div>
 
                       </div>
+
+                        <div class="products">
+                            <div class="section-header">
+                                <h2>Merchandise</h2>
+                            </div>
+                            <?php get_template_part('/template-parts/products'); ?>
+                        </div>
 
                       <div class="mobile">
                         <?php get_template_part('/template-parts/social-media'); ?>

@@ -1,0 +1,1 @@
+<div id="seated-55fdf2c0" data-artist-id="cc555c00-5d14-4c12-8de6-aed15944cc6c" data-css-version="2"></div><script src="https://widget.seated.com/app.js"></script>
