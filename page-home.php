@@ -137,7 +137,7 @@
                       <!-- MOBILE -->
                       <div class="mobile">
                         <img class="mobile upcoming-shows" src="<?php echo get_template_directory_uri(); ?>/assets/upcoming-shows.png" alt="Upcoming Shows" />
-                        <?php get_template_part('/template-parts/bandsintown'); ?>
+                        <?php /* get_template_part('/template-parts/bandsintown'); */ get_template_part('/template-parts/seated'); ?>
                         <img class="sdr-logo mobile" src="<?php echo get_template_directory_uri(); ?>/assets/sunday-drive-pink.png" alt="Sunday Drive Records" />
                         <a href="https://deathwishinc.com/collections/glare" title="Glare merchandise from Deathwish Inc." target="_blank">
                             <img class="deathwish-logo mobile" src="<?php echo get_template_directory_uri(); ?>/assets/deathwish-logo.png" alt="Glare merchandise from Deathwish Inc." />
